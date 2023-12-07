@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-one {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw;
+  gap: 10px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 7px;
+  font-size: 150%;
+  padding: 25px;
+}
+
+.box-two {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw;
+  gap: 10px;
+}
+
+.box-two .box {
+  background-color: blanchedalmond;
+}
+.box-two .B {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+.box-two .F {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.box-three {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw;
+  gap: 10px;
+}
+
+.box-three .box {
+  background-color: aquamarine;
+}
+
+.box-three .B {
+  grid-column: 2/2;
+  grid-row: 1/4;
+}
+
+.box-three .F {
+  grid-column: 1/4;
+  grid-row: 2;
+}
