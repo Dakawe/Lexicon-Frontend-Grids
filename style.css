@@ -4,6 +4,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.box:before {
+  content: "⭐";
+}
+.box:after {
+  content: "⭐";
+}
 .box-one {
   padding: 50px;
   display: grid;
@@ -145,9 +151,22 @@ body {
   grid-column: c1 / r;
 }
 
-.box:before {
-  content: "⭐";
+.box-eight {
+  padding: 50px;
+  display: grid;
+
+  grid-template-columns: repeat(3, [col] 15vw);
+  grid-template-rows: repeat(4, [rows] auto);
+  gap: 10px;
+  .box {
+    background-color: rgb(61, 46, 56);
+  }
 }
-.box:after {
-  content: "⭐";
+
+.box-eight .A {
+  grid-column: col / span 2;
+}
+.box-eight .B {
+  grid-column: col 3;
+  grid-row: rows 1 / rows 4;
 }
